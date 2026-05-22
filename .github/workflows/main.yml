@@ -3,7 +3,11 @@ name: Build Test Deploy
 on: 
   push:
     branches:
-      - main
+      - Develop
+  pull_request:
+    types: [opened,synchronize]
+    branches:
+      - Develop
 
 jobs:
   build:
