@@ -1,14 +1,9 @@
 name: Build Test Deploy
 
 on: 
- push:
+  push:
     branches:
       - Develop
-  
- pull_request:
-    types: [opened,synchronize]
-    branches:
-      - main
 
 jobs:
   build:
@@ -17,4 +12,3 @@ jobs:
     steps:
       - name: Build Step
         run: echo "Hello World from MAIN"
-
