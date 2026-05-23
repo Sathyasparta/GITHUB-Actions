@@ -1,0 +1,24 @@
+name: input checking
+on: 
+  workflow_dispatch:
+    inputs:
+      environments:
+        description: choose the environment to deploy
+        required: true
+        default: dev
+        type: choice
+        options:
+          - dev
+          - test
+          - prod
+      artifact_tag:
+        description: choose the git version
+        required: true
+jobs:
+  input-demo:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Deploy the APP
+        run: echo "deploying the verion of the ${{inputs.artifact_tag}} application of the environment is ${{inputs.environments}}"
+  
