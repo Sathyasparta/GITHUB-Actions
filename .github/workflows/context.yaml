@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: git details
-        run: echo "This is from this git id ${{ github.actor}}
+        run: echo " This is from this git id ${{ github.actor}}
              echo "this is form this reposiotry ${{github.repository}}
    
