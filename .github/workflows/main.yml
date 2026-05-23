@@ -1,9 +1,7 @@
 name: Html file added
 
 on: 
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   action-demo:
