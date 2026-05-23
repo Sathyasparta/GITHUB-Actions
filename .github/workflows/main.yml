@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    types: [opened,synchronize]
-    branches:
-      - Develop
 
 jobs:
   build:
@@ -15,4 +11,4 @@ jobs:
 
     steps:
       - name: Build Step
-        run: echo "Hello World from h0"
+        run: echo "Hello World from ${{vars.Name}}, ${{secrets.Pass_key}}"
