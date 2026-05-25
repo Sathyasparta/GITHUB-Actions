@@ -1,5 +1,6 @@
 name: context checking
-on: push
+on: 
+ workflow_dispatch: 
 jobs: 
   context-demo:
     runs-on: ubuntu-latest
