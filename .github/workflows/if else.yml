@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checking the branch
-        if: github.ref_name == 'main'
+        if: github.ref_name == 'develop'
         run: echo "running for the main branch"
   Deloy:
     runs-on: ubuntu-latest
     steps:
       - name: deploying the branch
-        if: github.ref_name == 'main'
+        if: github.ref_name == 'develop'
         run: echo "deplying the main branch"
