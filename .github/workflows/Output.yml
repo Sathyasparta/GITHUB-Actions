@@ -20,6 +20,6 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: deploy the version
-       run: echo "version the output is the ${{needs.build.outputs.version}}
+       run: echo "version the output is the ${{needs.build.outputs.version}}"
    
               
